@@ -1,0 +1,41 @@
+.repeat{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(0, 255, 200), rgb(0, 174, 255));
+    height: 900px;
+}
+
+.table{
+   position: absolute;
+   top: 64px;
+   box-sizing: border-box;
+   margin: 15px;
+
+   text-align: center;
+   width: calc(100% - 30px);
+}
+
+
+tbody{
+    border: 2px solid  rgb(0, 174, 255);
+}
+
+td{
+    padding: 4px;
+    font-size: 15px;
+    font-weight: bolder;
+    border: solid 2px ;
+}
+tr{
+    border: solid 2px ;
+}
+
+
+
+
+.headTable{
+    background: rgba(151, 151, 228, 0.603);
+    border:rgb(31, 4, 39) solid 2px;
+    padding: 2px;
+}

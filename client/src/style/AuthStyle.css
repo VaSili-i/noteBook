@@ -1,0 +1,16 @@
+.auth{
+    height:calc(950px - 64px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgb(140, 212, 240), rgb(28, 177, 197));
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 120px;
+    background-image: linear-gradient(rgb(131, 241, 232), rgb(243, 214, 214));
+    margin-top: -200px;
+    border-radius: 10%;
+}

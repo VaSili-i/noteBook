@@ -1,0 +1,15 @@
+[
+  2,
+  {
+    "id": 0,
+    "name": "name",
+    "password": "$2b$04$lB/XsjqPIUxH4iDB8jcMze8G5R0nA5wMsnGVK1QjMsPk9/jBPOgmS",
+    "role": "USeR"
+  },
+  {
+    "id": 1,
+    "name": "vasil",
+    "password": "$2b$04$gYT.FvE6dIoAQz1.Cb9znuh9fCuGZQNQUnSgyFvfe.D5FrhL4rsRu",
+    "role": "USeR"
+  }
+]

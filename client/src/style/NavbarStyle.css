@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    height: 64px;
+    width: 100%;
+    background-image: linear-gradient(rgb(34, 219, 210), rgb(0, 178, 248));
+}
+.link{
+    margin: 5px;
+    color: blue;
+}
+
+.link:visited{
+    color: brown;
+}
+.link:hover{
+    color:rgb(214, 25, 182);
+}
+.link:first-child{
+    margin-left: 30px;
+}
+
+.div_button{
+    display: flex;
+    justify-content: end; 
+    width: 100%;
+    padding-right:25px;
+}

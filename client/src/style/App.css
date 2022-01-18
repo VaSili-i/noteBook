@@ -1,0 +1,188 @@
+@import '~antd/dist/antd.css'; 
+
+
+.fetching{
+    width: 140px;
+    height: 40px;
+    position: absolute;
+    left: 1%;
+    top: 10%;
+    border-radius: 100%;
+    animation-name: fetch;
+    animation-direction: alternate;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+
+.cerkleFetch1{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    left: 10%;
+    top: 15%;
+    background: blue;
+    animation-name: fetchBottom;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+
+}
+.cerkleFetch2{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    left: 30%;
+    top: 5%;
+    background: red;
+    animation-name: fetchTop;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    
+}
+.cerkleFetch3{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    left: 50%;
+    top: 15%;
+    background: blue;
+    animation-name: fetchBottom;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+    
+}
+.cerkleFetch4{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    left: 70%;
+    top: 5%;
+    background: red;
+    animation-name: fetchBottom;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+}
+
+.cerkleFetch5{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    left: 90%;
+    top: 15%;
+    background: blue;
+    animation-name: fetchBottom;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: alternate;
+}
+.cerkleFetchposi{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+
+    left: 30%;
+    top: 25%;
+    background: blue;
+    backface-visibility: visible; 
+    transform-style: preserve-3d;
+    perspective: 500px;
+    perspective-origin: left center;
+}
+
+
+
+
+
+
+@keyframes fetchBottom{
+    0%{
+        top: 15%;
+    }
+    100%{
+        top: 5%;
+
+    }
+}
+@keyframes fetchTop{
+    0%{
+        top: 5%;
+    }
+    100%{
+        top: 15%;
+
+    }
+}
+
+
+@keyframes fetch{
+    0%{
+        left: 31%;
+    }
+    100%{
+        left: 71%;
+
+    }
+}
+
+
+
+
+
+
+.background{
+    box-sizing: border-box;
+    margin: 200px;
+    width: 30%;
+    height: 300px;
+    background: red;
+    perspective: 1800px;
+
+}
+
+.turn{
+    
+    width: 100%;
+    height: 300px;
+    background: blue;
+    transform: rotatey(45deg);
+    animation-name: turn;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+@keyframes turn {
+    0%{
+        transform: rotatey(180deg);
+
+    }
+    100%{
+        transform: rotatey(0deg);
+
+    }
+}
+
+.mativate{
+    height: 40px;
+    margin-left: -80px;
+    padding-top: 10px;
+    background-image: linear-gradient(rgb(0, 255, 200), rgb(0, 174, 255));
+    text-align: center;
+    font-family: sans-serif;
+    font-style: oblique;
+}

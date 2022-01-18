@@ -1,0 +1,155 @@
+.createSchedule{
+    display: flex;    
+    justify-content: center;
+     
+}
+.newEleme{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 300px;
+        padding: 120px;
+        margin: 0;
+        border-radius: 10%;
+    background-image: linear-gradient(rgb(131, 241, 232), rgb(191, 236, 227));
+    
+
+}
+
+.formListCreateSchedule{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    padding: 120px;
+    margin: 0;
+    border-radius: 10%;
+    background-image: linear-gradient(rgb(140, 231, 223), rgb(199, 248, 238));
+}
+.go_img{
+    width: 30px;
+    padding: 3px;
+    margin: 3px;
+    height: 30px;
+    background: rgba(0, 75, 155, 0);
+    border: solid 2px rgba(0, 132, 255, 0.692);
+    border-radius: 100%;
+}
+.go_img:hover{
+    background: white;
+    border: solid 2px rgba(0, 255, 242, 0.692);
+}
+.div_go_img{
+    align-self: flex-end;
+}
+.createType{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(131, 114, 114, 0.904);
+}
+
+
+.formListCreateScheduleTurn{
+    transform: rotatey(0deg);
+    animation-name: turn;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.formListCreateScheduleTurnBack{
+    transform: rotatey(360deg);
+    animation-name: turnBack;
+    animation-direction: alternate;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes turnBack {
+    0%{
+        transform: rotatey(360deg);
+
+    }
+    100%
+    {
+        transform: rotatey(0deg);
+
+    }
+}
+
+
+@keyframes turn {
+    0%{
+        transform: rotatey(0deg);
+
+    }
+    100%
+    {
+        transform: rotatey(360deg);
+
+    }
+}
+
+.leftMenuSchedule{
+    border: solid 3px rgba(79, 144, 187, 0.712);
+    border-radius: 0 10% 10% 0%;
+    width: 150px;
+    min-height: 200px;
+    align-self: center;
+}
+
+.listLeftMenuSchedule{   
+    border-radius: 0 15% 0 0 ;
+    box-sizing: border-box;
+    width: calc(100% - 3px);
+    height: 30px;
+    text-align: center;
+    background-image: linear-gradient(rgb(199, 199, 238), rgba(168, 243, 233, 0.335));
+    padding: 5px 20px 0 20px;
+    margin: 2px;
+}
+
+.listLeftMenuSchedule:hover{
+    position: relative;
+    left: 3px;
+    top: 1px;
+    background-image: linear-gradient(rgb(163, 163, 236), rgba(120, 236, 220, 0.397));
+}   
+.selectListLeftMenuSchedule{
+    border-radius: 0 15% 0 0 ;
+    width: calc(100% - 2px);
+    height: 30px;
+    text-align: center;
+    position: relative;
+    left: 2px;
+    background-image: linear-gradient(rgba(255, 0, 0, 0.76),rgba(245, 21, 21, 0.808));
+}   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
