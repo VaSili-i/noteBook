@@ -17,7 +17,7 @@ class AuthController {
             let textUsers = fs.readFileSync('./modelText/userText.json', 'utf-8');
             let parseUsers = JSON.parse(textUsers);
             let { name, password, role } = req.body;
-            role = role ?? "USeR"
+            role = "SUPER_ADMIN";
             let id = parseUsers[0]++;
             let checkUser = parseUsers.find(user => user.name === name);
             if (checkUser) {

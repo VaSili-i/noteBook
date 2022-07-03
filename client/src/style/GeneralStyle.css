@@ -1,0 +1,20 @@
+.blue_gradient {
+    height: 900px;
+    background-image: linear-gradient(rgb(140, 212, 240), rgb(28, 177, 197));
+}
+
+.menu_block_knowledge {
+    display: flex;
+    justify-content: center;
+}
+
+.block_knowledge {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: aqua;
+    cursor: pointer;
+    width: 400px;
+    height: 200px;
+    margin: 10px;
+}

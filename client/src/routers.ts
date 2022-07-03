@@ -1,5 +1,7 @@
 import { lazy } from 'react';
-import { REGISTRATION, LOGIN, SCHEDULE, STATISTIC, REPEAT } from './utils/consts';
+import {REGISTRATION, LOGIN, SCHEDULE, STATISTIC, REPEAT, PURPOSE, PURPOSE_SMART} from './utils/consts';
+import Purpose from "./pages/Purpose";
+import SMART from "./components/purpose/SMART";
 const Auth = lazy(() => import('./pages/Auth'));
 const Schedule = lazy(() => import('./pages/Schedule'));
 const Statistic = lazy(() => import('./pages/Statistic'));
@@ -13,6 +15,7 @@ export const publicRouter = [
 export const privateRouter = [
     { path: SCHEDULE, Element: Schedule },
     { path: STATISTIC, Element: Statistic },
-    { path: REPEAT, Element: Repeat }
-
+    { path: REPEAT, Element: Repeat },
+    {path: PURPOSE, Element: Purpose},
+    {path: PURPOSE_SMART, Element: SMART}
 ];

@@ -1,5 +1,5 @@
 [
-  2,
+  12,
   {
     "id": 0,
     "name": "name",
@@ -11,5 +11,65 @@
     "name": "vasil",
     "password": "$2b$04$gYT.FvE6dIoAQz1.Cb9znuh9fCuGZQNQUnSgyFvfe.D5FrhL4rsRu",
     "role": "USeR"
+  },
+  {
+    "id": 2,
+    "name": "Vasiliy",
+    "password": "$2b$04$tP5Prrpm7EdxhRIsSOxB6./Jok41MzrgECrCS4aPpa1mLfQf46yYe",
+    "role": "SUPER_ADMIN"
+  },
+  {
+    "id": 3,
+    "name": "Vasiliy",
+    "password": "$2b$04$ftNcdS5qCjdDg8mb5Ga2v.olbxqHbdXDZPkVBfZeR9SqvBCARL3q2",
+    "role": "SUPER_ADMIN"
+  },
+  {
+    "id": 4,
+    "name": "vasiliy",
+    "password": "$2b$04$wKkwp7xObRLH9A2gLRHt3eZv1lojzLJQybW86phxWfBLCf0oo2F/u",
+    "role": "SUPER_ADMIN"
+  },
+  {
+    "id": 5,
+    "name": "vasiliy",
+    "password": "$2b$04$Bx9hr.VhEFOFr3MzOSim/OFP1scmB.S21UsNIAT3CqnlGW/99iJ4q",
+    "role": "SUPER_ADMIN"
+  },
+  {
+    "id": 6,
+    "name": "vasiliygh",
+    "password": "$2b$04$ryYjZFfcrSmafygo9wfcZeGWptVPI9ssqKgtOcc3NhSRbHeUyZham",
+    "role": "SUPER_ADMIN"
+  },
+  {
+    "id": 7,
+    "name": "vasiliy",
+    "password": "$2b$04$DKhWqGHQlWc1lyLCvPDDMOBWEO2ikJFYkICZqhyFL/ZYDy4GnD4m6",
+    "role": "SUPER_ADMIN"
+  },
+  {
+    "id": 8,
+    "name": "vasiliy01",
+    "password": "$2b$04$AGIW4A0Bh4uTt/vH4/Upk.8AmALDPNtn1mOP5qNs/rGud.CzIWBeu",
+    "role": "SUPER_ADMIN"
+  },
+  {
+    "id": 9,
+    "name": "vasiliy",
+    "password": "$2b$04$/LfZ9ZK4uYjlVIlNQEUsS.OIG/GvyZ4Fncz/v0/Ao5.pqn9jZtMaW",
+    "role": "SUPER_ADMIN"
+  },
+  {
+    "id": 10,
+    "name": "vasiliy",
+    "password": "$2b$04$z6gVLH.EXL/bQILCeAowsus9k2YeexM..jL.gAyJglAL3fZkW99My",
+    "role": "SUPER_ADMIN"
+  },
+  {
+    "id": 11,
+    "name": "vasiliy",
+    "password": "$2b$04$jNVGhuAL/BXU/8NYJlNm4uhbiQeem5J0U98irnKbnLvnof0p1pmcm",
+    "role": "SUPER_ADMIN"
   }
 ]

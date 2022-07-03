@@ -1,5 +1,5 @@
 import React from 'react';
-import { REGISTRATION, LOGIN, SCHEDULE, STATISTIC, REPEAT } from '../utils/consts';
+import {REGISTRATION, LOGIN, SCHEDULE, STATISTIC, REPEAT, PURPOSE} from '../utils/consts';
 import { Link, useNavigate } from 'react-router-dom';
 import '../style/NavbarStyle.css'
 import Button from '../UI/button/Button';
@@ -18,7 +18,7 @@ const Navbar = function () {
                 <Link className='link' to={SCHEDULE} >SCHEDULE</Link>
                 <Link className='link' to={STATISTIC} >STATISTIC</Link>
                 <Link className='link' to={REPEAT} >REPEAT</Link>
-
+                <Link className='link' to={PURPOSE} >PURPOSE</Link>
                 <div className="div_button">
                     <div>{user.name ?? 'dont'}</div>
                     <Button onClick={() => { navigate(REGISTRATION) }}>OUT</Button>

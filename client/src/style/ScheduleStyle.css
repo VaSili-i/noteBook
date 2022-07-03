@@ -2,3 +2,12 @@
     height: 900px;
     background-image: linear-gradient(rgb(140, 212, 240), rgb(28, 177, 197));
 }
+
+.block_list {
+    background: aqua;
+    margin: 10px;
+}
+
+.background_blue {
+    background: aqua;
+}
