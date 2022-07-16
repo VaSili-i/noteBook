@@ -1,5 +1,4 @@
-import { RepeatTypeActions, ActionCreators, IStateRepeat } from './types';
-
+import {RepeatTypeActions, ActionCreators, IStateRepeat} from './types';
 
 
 const stateRepeat: IStateRepeat = {
@@ -31,11 +30,11 @@ const stateRepeat: IStateRepeat = {
 export const repeatReducer = function (state = stateRepeat, action: ActionCreators): IStateRepeat {
     switch (action.type) {
         case RepeatTypeActions.SET_LOADING_REPEAT:
-            return { ...state, isLoading: action.payload }
+            return {...state, isLoading: action.payload}
         case RepeatTypeActions.SET_ERROR_REPEAT:
-            return { ...state, error: action.payload, isLoading: false }
+            return {...state, error: action.payload, isLoading: false}
         case RepeatTypeActions.SUCCESS_REPEAT:
-            return { ...state, repeat: action.payload, isLoading: false }
+            return {...state, repeat: action.payload, isLoading: false}
         default:
             return state
     }

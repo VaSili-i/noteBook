@@ -1,4 +1,4 @@
-.button{
+.button {
     height: 30px;
     width: 70px;
     border-radius: 15%;
@@ -7,13 +7,14 @@
     background: rgb(5, 220, 240);
 
 }
+
 .button:hover {
     background: rgb(197, 200, 246);
     border: solid rgb(239, 250, 239) 2px;
 }
-.button:active{
+
+.button:active {
     position: relative;
     right: 1px;
     top: 1px;
-
 }

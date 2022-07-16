@@ -1,4 +1,4 @@
-const { Router } = require('express');
+const {Router} = require('express');
 const userRouter = new Router();
 const checkUser = require('../middleware/checkUser')
 

@@ -1,5 +1,5 @@
 [
-  12,
+  16,
   {
     "id": 0,
     "name": "name",
@@ -70,6 +70,30 @@
     "id": 11,
     "name": "vasiliy",
     "password": "$2b$04$jNVGhuAL/BXU/8NYJlNm4uhbiQeem5J0U98irnKbnLvnof0p1pmcm",
+    "role": "SUPER_ADMIN"
+  },
+  {
+    "id": 12,
+    "name": "vasiliy",
+    "password": "$2b$04$6K0h56OuP9TNX6Uxou5/5eNPvX1vVYRf3TCQ8EtThm3USoyIhfMjK",
+    "role": "SUPER_ADMIN"
+  },
+  {
+    "id": 13,
+    "name": "vasilii",
+    "password": "$2b$04$O2.viaaEqICyRVjXoEGbrOAGciBvL5KAg/9pNQjQlRwWwSGhxnYhi",
+    "role": "SUPER_ADMIN"
+  },
+  {
+    "id": 14,
+    "name": "vasilii",
+    "password": "$2b$04$60DPprMVBySsmIBBXIKDa.XJwVM6AYorBMC5/AoOP/yA6KC3bh4Wu",
+    "role": "SUPER_ADMIN"
+  },
+  {
+    "id": 15,
+    "name": "vasilii",
+    "password": "$2b$04$hvyAYOEmxuWfTPFRCL3//uKygNC/G4j8HkqT/z6cUS0mtHfN6W5km",
     "role": "SUPER_ADMIN"
   }
 ]

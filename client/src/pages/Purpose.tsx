@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import '../style/GeneralStyle.css';
 import {useNavigate} from "react-router-dom";
 import {PURPOSE_SMART} from "../utils/consts";
+import ModalPurpose from "../components/purpose/ModalPurpose";
 
 const Purpose = function () {
     const [tactics, setTactics] = useState(['SMART']);
@@ -16,6 +17,8 @@ const Purpose = function () {
                     </div>
                 )}
             </div>
+
+            <ModalPurpose/>
         </div>
     )
 };

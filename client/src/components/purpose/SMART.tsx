@@ -4,16 +4,26 @@ import Button from "../../UI/button/Button";
 
 const SMART = function () {
     const [SMART, setSMART] = useState([
-        {name: 'Конкретность', body: 'Вопросы. </br>' +
-                                     'Что ожидаете? Каким образом?'},
-        {name: 'Измеримость', body: 'Вопросы. </br>' +
-                'Как определить что цель достигнута'},
-        {name: 'Достижимость(Реалистичность)', body: 'Вопросы. </br>' +
-                'Что поможет? Что помешает?? Дополнительные условия от которых зависит цель.'},
-        {name: 'Актуальность(Обоснованная)', body: 'Вопросы. </br>' +
-                'Для чего она(зачем)? Выгоды?? Противоречия??? '},
-        {name: 'Временные ограничения', body: 'Вопросы. </br>' +
-                'За какое время её реально сделать? За какое нужно??'},
+        {
+            name: 'Конкретность', body: 'Вопросы. </br>' +
+                'Что ожидаете? Каким образом?'
+        },
+        {
+            name: 'Измеримость', body: 'Вопросы. </br>' +
+                'Как определить что цель достигнута'
+        },
+        {
+            name: 'Достижимость(Реалистичность)', body: 'Вопросы. </br>' +
+                'Что поможет? Что помешает?? Дополнительные условия от которых зависит цель.'
+        },
+        {
+            name: 'Актуальность(Обоснованная)', body: 'Вопросы. </br>' +
+                'Для чего она(зачем)? Выгоды?? Противоречия??? '
+        },
+        {
+            name: 'Временные ограничения', body: 'Вопросы. </br>' +
+                'За какое время её реально сделать? За какое нужно??'
+        },
     ]);
 
     const [pattern, setPattern] = useState([
@@ -37,21 +47,22 @@ const SMART = function () {
             </p>
             <div>
                 {SMART.map((smart) =>
-                <div className='block_list'>
-                    <h3>{smart.name}</h3>
-                    <div>{smart.body}</div>
-                </div>
+                    <div className='block_list'>
+                        <h3>{smart.name}</h3>
+                        <div>{smart.body}</div>
+                    </div>
                 )}
             </div>
             <div className='background_blue'>
                 <h2>Шаблон</h2>
                 {pattern.map(({step, body}) =>
-                <div>
-                    <h3>{step}</h3>
-                    <div>{body}</div>
-                </div>
+                    <div>
+                        <h3>{step}</h3>
+                        <div>{body}</div>
+                    </div>
                 )}
-                <Button onClick={() => {}}>add SMART</Button>
+                <Button onClick={() => {
+                }}>add SMART</Button>
             </div>
         </div>
     );

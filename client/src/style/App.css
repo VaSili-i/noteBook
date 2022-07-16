@@ -1,7 +1,7 @@
-@import '~antd/dist/antd.css'; 
+@import '~antd/dist/antd.css';
 
 
-.fetching{
+.fetching {
     width: 140px;
     height: 40px;
     position: absolute;
@@ -15,7 +15,7 @@
 
 }
 
-.cerkleFetch1{
+.cerkleFetch1 {
     position: absolute;
     width: 15px;
     height: 15px;
@@ -30,7 +30,8 @@
     animation-direction: alternate;
 
 }
-.cerkleFetch2{
+
+.cerkleFetch2 {
     position: absolute;
     width: 15px;
     height: 15px;
@@ -43,9 +44,10 @@
     animation-iteration-count: infinite;
     animation-timing-function: ease-out;
     animation-direction: alternate;
-    
+
 }
-.cerkleFetch3{
+
+.cerkleFetch3 {
     position: absolute;
     width: 15px;
     height: 15px;
@@ -58,9 +60,10 @@
     animation-iteration-count: infinite;
     animation-timing-function: ease-in;
     animation-direction: alternate;
-    
+
 }
-.cerkleFetch4{
+
+.cerkleFetch4 {
     position: absolute;
     width: 15px;
     height: 15px;
@@ -75,7 +78,7 @@
     animation-direction: alternate;
 }
 
-.cerkleFetch5{
+.cerkleFetch5 {
     position: absolute;
     width: 15px;
     height: 15px;
@@ -89,7 +92,8 @@
     animation-timing-function: ease-in;
     animation-direction: alternate;
 }
-.cerkleFetchposi{
+
+.cerkleFetchposi {
     position: absolute;
     width: 55px;
     height: 55px;
@@ -97,53 +101,46 @@
     left: 30%;
     top: 25%;
     background: blue;
-    backface-visibility: visible; 
+    backface-visibility: visible;
     transform-style: preserve-3d;
     perspective: 500px;
     perspective-origin: left center;
 }
 
 
-
-
-
-
-@keyframes fetchBottom{
-    0%{
+@keyframes fetchBottom {
+    0% {
         top: 15%;
     }
-    100%{
+    100% {
         top: 5%;
 
     }
 }
-@keyframes fetchTop{
-    0%{
+
+@keyframes fetchTop {
+    0% {
         top: 5%;
     }
-    100%{
+    100% {
         top: 15%;
 
     }
 }
 
 
-@keyframes fetch{
-    0%{
+@keyframes fetch {
+    0% {
         left: 31%;
     }
-    100%{
+    100% {
         left: 71%;
 
     }
 }
 
 
-
-
-
-
-.background{
+.background {
     box-sizing: border-box;
     margin: 200px;
     width: 30%;
@@ -153,8 +150,8 @@
 
 }
 
-.turn{
-    
+.turn {
+
     width: 100%;
     height: 300px;
     background: blue;
@@ -167,17 +164,17 @@
 
 
 @keyframes turn {
-    0%{
+    0% {
         transform: rotatey(180deg);
 
     }
-    100%{
+    100% {
         transform: rotatey(0deg);
 
     }
 }
 
-.mativate{
+.mativate {
     height: 40px;
     margin-left: -80px;
     padding-top: 10px;

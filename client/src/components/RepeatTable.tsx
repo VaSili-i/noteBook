@@ -1,11 +1,12 @@
-import React, { FC } from 'react';
-import { markAsUntransferable } from 'worker_threads';
-import { IRepeat } from '../models/repeatModule';
+import React, {FC} from 'react';
+import {markAsUntransferable} from 'worker_threads';
+import {IRepeat} from '../models/repeatModule';
 
 interface IRepeatTable {
     repeat: IRepeat[]
 }
-const RepeatTable: FC<IRepeatTable> = function ({ repeat },) {
+
+const RepeatTable: FC<IRepeatTable> = function ({repeat},) {
 
     function mounth() {
         let dayMonth = 0;
@@ -22,24 +23,24 @@ const RepeatTable: FC<IRepeatTable> = function ({ repeat },) {
         <table className="table">
             <caption> Stati table</caption>
             <thead className='headTable'>
-                <tr>
-                    {dateF.map((date) =>
-                        <td>{date}</td>
-                    )}
-                </tr>
+            <tr>
+                {dateF.map((date) =>
+                    <td>{date}</td>
+                )}
+            </tr>
             </thead>
-            {repeat.map(({ subject, done, ball }) =>
+            {repeat.map(({subject, done, ball}) =>
                 <tbody>
-                    <tr>
-                        <td>{subject}
-                            <select>
-                                <option>f</option>
-                            </select>
-                        </td>
+                <tr>
+                    <td>{subject}
+                        <select>
+                            <option>f</option>
+                        </select>
+                    </td>
 
-                        <td>{done}</td>
-                        <td>{ball}</td>
-                    </tr>
+                    <td>{done}</td>
+                    <td>{ball}</td>
+                </tr>
                 </tbody>
             )}
         </table>

@@ -1,31 +1,35 @@
-*{
+* {
     margin: 0;
 }
-.navbar{
+
+.navbar {
     display: flex;
     align-items: center;
     height: 64px;
     width: 100%;
     background-image: linear-gradient(rgb(34, 219, 210), rgb(0, 178, 248));
 }
-.link{
+
+.link {
     margin: 5px;
     color: blue;
 }
 
-.link:visited{
+.link:visited {
     color: brown;
 }
-.link:hover{
-    color:rgb(214, 25, 182);
+
+.link:hover {
+    color: rgb(214, 25, 182);
 }
-.link:first-child{
+
+.link:first-child {
     margin-left: 30px;
 }
 
-.div_button{
+.div_button {
     display: flex;
-    justify-content: end; 
+    justify-content: end;
     width: 100%;
-    padding-right:25px;
+    padding-right: 25px;
 }

@@ -1,4 +1,4 @@
-import { IUser } from "../../../models/userModel";
+import {IUser} from "../../../models/userModel";
 
 export interface IDefaultState {
     isAuth: boolean;
@@ -6,8 +6,6 @@ export interface IDefaultState {
     isLoading: boolean;
     error: null | string;
 }
-
-
 
 export enum EnumUserAction {
     SUCSSES_USER = 'SUCSSES_USER',
@@ -25,10 +23,12 @@ export interface ErrorUserInterface {
     type: EnumUserAction.SET_ERROR;
     payload: string;
 }
+
 export interface LoadingUserInterface {
     type: EnumUserAction.SET_IS_LOADING;
     payload: boolean;
 }
+
 export interface AuthUserInterface {
     type: EnumUserAction.SET_AUTH;
     payload: boolean;

@@ -1,15 +1,21 @@
-import { AppDispatch } from '../..';
-import { IUser } from '../../../models/userModel';
+import {AppDispatch} from '../..';
+import {IUser} from '../../../models/userModel';
 import axios from 'axios';
-import { AuthUserInterface, EnumUserAction, ErrorUserInterface, LoadingUserInterface, SucssesUserInterface } from './types';
+import {
+    AuthUserInterface,
+    EnumUserAction,
+    ErrorUserInterface,
+    LoadingUserInterface,
+    SucssesUserInterface
+} from './types';
 import jwt_decode from 'jwt-decode';
 
 
 export const AuthCreators = {
-    setIsLoading: (loading: boolean): LoadingUserInterface => ({ type: EnumUserAction.SET_IS_LOADING, payload: loading }),
-    setError: (error: string): ErrorUserInterface => ({ type: EnumUserAction.SET_ERROR, payload: error }),
-    setAuth: (auth: boolean): AuthUserInterface => ({ type: EnumUserAction.SET_AUTH, payload: auth }),
-    setSucsses: (user: IUser): SucssesUserInterface => ({ type: EnumUserAction.SUCSSES_USER, payload: user }),
+    setIsLoading: (loading: boolean): LoadingUserInterface => ({type: EnumUserAction.SET_IS_LOADING, payload: loading}),
+    setError: (error: string): ErrorUserInterface => ({type: EnumUserAction.SET_ERROR, payload: error}),
+    setAuth: (auth: boolean): AuthUserInterface => ({type: EnumUserAction.SET_AUTH, payload: auth}),
+    setSucsses: (user: IUser): SucssesUserInterface => ({type: EnumUserAction.SUCSSES_USER, payload: user}),
     registration: (user: any) => (dispatch: AppDispatch) => {
         try {
             dispatch(AuthCreators.setIsLoading(true));
@@ -55,7 +61,7 @@ export const AuthCreators = {
             }
 
             let response = await axios.get('http://localhost:5000/auth/check',
-                { headers: { "Authorization": `Bearer ${token}` } });
+                {headers: {"Authorization": `Bearer ${token}`}});
             if (!response.data) {
                 return
             }

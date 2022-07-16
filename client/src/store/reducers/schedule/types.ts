@@ -1,4 +1,3 @@
-
 export interface ISchedule {
     type: string,
     list: string[]

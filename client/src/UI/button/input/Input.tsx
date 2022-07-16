@@ -1,4 +1,4 @@
-import React, { ChangeEvent, FC } from 'react';
+import React, {ChangeEvent, FC} from 'react';
 import './InputStyle.css'
 
 interface InputProps {
@@ -8,10 +8,10 @@ interface InputProps {
     ref?: any,
 }
 
-const Input: FC<InputProps> = React.forwardRef(function ({ value, onChange, params }, ref) {
+const Input: FC<InputProps> = React.forwardRef(function ({value, onChange, params}, ref) {
 
     return (
-        <input ref={ref} {...params} onChange={onChange} value={value} className="input" />
+        <input ref={ref} {...params} onChange={onChange} value={value} className="input"/>
     )
 })
 

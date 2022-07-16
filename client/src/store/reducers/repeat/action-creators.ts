@@ -1,12 +1,26 @@
 import axios from "axios";
-import { AppDispatch } from "../..";
-import { IRepeat } from "../../../models/repeatModule";
-import { ErrorRepeatActionInterface, LoadingRepeatActionInterface, RepeatTypeActions, SuccessRepeatActionInterface } from "./types";
+import {AppDispatch} from "../..";
+import {IRepeat} from "../../../models/repeatModule";
+import {
+    ErrorRepeatActionInterface,
+    LoadingRepeatActionInterface,
+    RepeatTypeActions,
+    SuccessRepeatActionInterface
+} from "./types";
 
 export const RepeatCreators = {
-    setLoading: (loading: boolean): LoadingRepeatActionInterface => ({ type: RepeatTypeActions.SET_LOADING_REPEAT, payload: loading }),
-    setSuccess: (repeat: IRepeat[]): SuccessRepeatActionInterface => ({ type: RepeatTypeActions.SUCCESS_REPEAT, payload: repeat }),
-    setError: (error: string): ErrorRepeatActionInterface => ({ type: RepeatTypeActions.SET_ERROR_REPEAT, payload: error }),
+    setLoading: (loading: boolean): LoadingRepeatActionInterface => ({
+        type: RepeatTypeActions.SET_LOADING_REPEAT,
+        payload: loading
+    }),
+    setSuccess: (repeat: IRepeat[]): SuccessRepeatActionInterface => ({
+        type: RepeatTypeActions.SUCCESS_REPEAT,
+        payload: repeat
+    }),
+    setError: (error: string): ErrorRepeatActionInterface => ({
+        type: RepeatTypeActions.SET_ERROR_REPEAT,
+        payload: error
+    }),
     fetchRepeat: () => {
         return async function (dispatch: AppDispatch) {
             try {

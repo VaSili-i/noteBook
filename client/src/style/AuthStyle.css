@@ -1,12 +1,12 @@
-.auth{
-    height:calc(950px - 64px);
+.auth {
+    height: calc(950px - 64px);
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: linear-gradient(rgb(140, 212, 240), rgb(28, 177, 197));
 }
 
-.form{
+.form {
     display: flex;
     flex-direction: column;
     padding: 120px;

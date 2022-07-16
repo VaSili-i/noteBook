@@ -1,4 +1,4 @@
-import React, { ForwardedRef, useRef, useState } from 'react';
+import React, {ForwardedRef, useRef, useState} from 'react';
 import '../style/ScheduleStyle.css';
 import CreateSchedule from '../modals/CreateSchedule';
 import Button from '../UI/button/Button';
@@ -18,9 +18,11 @@ const Schedule = function () {
 
     return (
         <div onClick={() => (setHide(false))}
-            className="schedule">
-            <Button onClick={(e) => { setIsHide(e) }}>Schedule</Button>
-            <CreateSchedule ref={refInput} hide={hide} />
+             className="schedule">
+            <Button onClick={(e) => {
+                setIsHide(e)
+            }}>Schedule</Button>
+            <CreateSchedule ref={refInput} hide={hide}/>
         </div>
     )
 }
